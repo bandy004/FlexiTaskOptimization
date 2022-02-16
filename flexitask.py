@@ -399,9 +399,9 @@ def displaySolution(solver, status, start_time, datapoints):
                     'Color': tasks[t].color})
 
     st.header('Status = ' + str(solver.StatusName(status)))
-    st.header('Makespan = ' + str(solver.Value(makespan)))
-    st.header('Solver Time = ' + str(time.time() - start_time))
-    st.header('Total Setup = '+str(solver.Value(totalChangeover)))
+    st.text('Makespan = ' + str(solver.Value(makespan)))
+    st.text('Solver Time = ' + str(time.time() - start_time))
+    st.text('Total Setup = '+str(solver.Value(totalChangeover)))
     # st.table(sol)
     # resource timeline chart
     # st.header("Resource Schedule:")
