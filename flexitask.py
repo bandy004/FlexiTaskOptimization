@@ -398,8 +398,10 @@ def displaySolution(solver, status, start_time, datapoints):
                     'End': start_schedule + dt.timedelta(hours=solver.Value(restasks[r, t].end)),
                     'Color': tasks[t].color})
 
-    st.header(str(solver.StatusName(status)) + '---' + str(solver.Value(makespan)) +
-              '---'+str(min_makespan) + "--" + str(time.time() - start_time) + '-'+str(solver.Value(totalChangeover)))
+    st.header('Status = ' + str(solver.StatusName(status)))
+    st.header('Makespan = ' + str(solver.Value(makespan)))
+    st.header('Solver Time = ' + str(time.time() - start_time))
+    st.header('Total Setup = '+str(solver.Value(totalChangeover)))
     # st.table(sol)
     # resource timeline chart
     # st.header("Resource Schedule:")
