@@ -457,3 +457,5 @@ submit = form.form_submit_button(label="Solve")
 
 if(submit):
     solve()
+else:
+    st.title("Task assignment problem play ground")
