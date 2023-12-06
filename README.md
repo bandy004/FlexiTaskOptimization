@@ -1,0 +1,12 @@
+# FlexiTaskOptimization
+st.title("Task assignment problem play ground")
+    st.header("Problem Statement")
+    st.text("Tasks: number of tasks to allocate to resources.")
+    st.text("Each task will be assigned a random duration and a color (4 possible colors are assigned).")
+    st.text("Optimizer assigns tasks to resources to minimize overall makespan.")
+    st.text("Resources: number available resources where tasks can be assigned.")
+    st.text("When two tasks are assigned to a resource next to each other a setup time is allocated based on the colors of tasks.")
+    st.header("Solver tuning")
+    st.text("Time limit: limit runtime of solver")
+    st.text("Horizon: bound for makespan.")
+    st.text("Setup limit: total setup time bound")
